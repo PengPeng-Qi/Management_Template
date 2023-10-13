@@ -1,4 +1,3 @@
-// .prettierrc.cjs
 // @see: https://prettier.io/docs/en/options
 
 module.exports = {
