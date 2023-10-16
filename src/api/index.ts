@@ -1,5 +1,6 @@
 import axios from 'axios'
 import type { InternalAxiosRequestConfig, AxiosError, AxiosResponse } from 'axios'
+import { checkStatus } from './helper/checkStatus'
 
 const api = axios.create({
   // 默认地址请求地址，可在 .env.** 文件中进行修改
@@ -29,6 +30,9 @@ api.interceptors.response.use(
     return response.data
   },
   (error: AxiosError) => {
+    const { response } = error
+    // 根据服务器响应的错误状态码，做不同的处理
+    if (response) checkStatus(response.status)
     return Promise.reject(error)
   }
 )
