@@ -1,3 +1,5 @@
 <script setup lang="ts"></script>
 
-<template>HomePage View</template>
+<template>
+  <p>HomePage View</p>
+</template>
