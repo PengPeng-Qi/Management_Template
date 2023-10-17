@@ -3,8 +3,8 @@ import router from './router'
 import ElementPlus from 'element-plus'
 // reset css
 import '@/styles/reset.css'
-// element css
-import 'element-plus/dist/index.css'
+// customized element style
+import '@/styles/element/index.scss'
 // element icon
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
