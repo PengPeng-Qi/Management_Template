@@ -39,6 +39,7 @@
     "lint-staged": "^14.0.1",
     "npm-run-all2": "^6.0.6",
     "prettier": "^3.0.3",
+    "sass": "^1.69.3",
     "typescript": "~5.2.0",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.2",
