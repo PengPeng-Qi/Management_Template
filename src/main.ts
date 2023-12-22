@@ -1,6 +1,7 @@
 import App from './App.vue'
 import router from './router'
 import ElementPlus from 'element-plus'
+import pinia from '@/stores'
 // reset css
 import '@/styles/reset.css'
 // customized element style
@@ -20,4 +21,4 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
 
-app.use(createPinia()).use(router).use(ElementPlus).mount('#app')
+app.use(pinia).use(router).use(ElementPlus).mount('#app')
