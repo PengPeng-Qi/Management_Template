@@ -2,6 +2,8 @@ import App from './App.vue'
 import router from './router'
 import ElementPlus from 'element-plus'
 import pinia from '@/stores'
+// custom icons library
+import 'virtual:svg-icons-register'
 // reset css
 import '@/styles/reset.css'
 // customized element style
