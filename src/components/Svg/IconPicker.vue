@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import ids from 'virtual:svg-icons-names' // 引入所有的 icons
+
 defineProps(['modelValue'])
 const emits = defineEmits(['update:modelValue'])
 
-const icons = Array.from({ length: 3 }, (item, index) => 'library-icon' + (Number(index) + 1))
+const icons = ids
+  .filter(iconName => iconName.includes('library'))
+  .map(iconName => iconName.slice(iconName.indexOf('library')))
 
 const iconLibraryDialog = ref(false)
 
