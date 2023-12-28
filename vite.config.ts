@@ -6,6 +6,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,9 +17,12 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia']
+      imports: ['vue', 'vue-router', 'pinia'],
+      resolvers: [ElementPlusResolver()]
     }),
-    Components({}),
+    Components({
+      resolvers: [ElementPlusResolver()]
+    }),
     vueSetupExtend() /* 提供修改单文件组件 name 能力 */,
     createSvgIconsPlugin({
       iconDirs: [path.resolve(process.cwd(), 'src/icons')] /* 指定需要缓存的图标文件夹 */,
