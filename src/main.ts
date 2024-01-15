@@ -3,8 +3,6 @@ import router from './router'
 import pinia from '@/stores'
 // global directives
 import directivesPlugin from './directives'
-// custom icons library
-import 'virtual:svg-icons-register'
 // reset css
 import '@/styles/reset.css'
 // customized element style

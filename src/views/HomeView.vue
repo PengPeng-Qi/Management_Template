@@ -1,8 +1,5 @@
-<script setup lang="ts">
-import UseIconPicker from './Demo/UseIconPicker.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <p>HomePage View</p>
-  <UseIconPicker />
 </template>
