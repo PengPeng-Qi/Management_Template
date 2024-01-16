@@ -1,8 +1,4 @@
-<script setup lang="ts">
-onMounted(() => {
-  document.title = import.meta.env.VITE_APP_TITLE
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <RouterView />
