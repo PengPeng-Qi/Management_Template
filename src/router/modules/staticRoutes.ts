@@ -1,10 +1,23 @@
 /**
- * staticRoutes (静态路由)
+ * staticRoutes (静态页面路由)
  */
 export const staticRoutes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: () => import('@/views/HomeView.vue')
+  }
+]
+
+/**
+ * errorRoutes (错误页面路由)
+ */
+export const errorRoutes = [
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('@/views/errors/NotFound.vue'),
+    meta: {
+      title: '404 页面'
+    }
   }
 ]
