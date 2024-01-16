@@ -2,5 +2,5 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "vue.autoInsert.dotValue": true,
-  "cSpell.words": ["aeskey", "ciphertext", "pubencrypt", "pubencrypted"]
+  "cSpell.words": ["aeskey", "ciphertext", "nightwatch", "pubencrypt", "pubencrypted"]
 }
