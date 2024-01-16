@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import NProgress from '@/config/nprogress'
-import { staticRoutes } from './modules/staticRoutes'
+import { staticRoutes, errorRoutes } from './modules/staticRoutes'
 
 const mode = import.meta.env.VITE_ROUTER_MODE
 
@@ -9,9 +9,18 @@ const routerMode = {
   history: () => createWebHistory()
 }
 
+/**
+ * @description 📚 路由参数配置简介
+ * @param path ==> 路由菜单访问路径
+ * @param name ==> 路由 name
+ * @param redirect ==> 路由重定向地址
+ * @param component ==> 视图文件路径
+ * @param meta ==> 路由菜单元信息
+ * @param meta.title ==> 路由标题 (用作 document.title )
+ * */
 const router = createRouter({
   history: routerMode[mode](),
-  routes: [...staticRoutes],
+  routes: [...staticRoutes, ...errorRoutes],
   strict: false /* 路由中对 '/' 进行严格匹配 */,
   scrollBehavior: () => ({ left: 0, top: 0 }) /* 切换路由滚动行为，每次切换路由都滚动到顶部 */
 })
