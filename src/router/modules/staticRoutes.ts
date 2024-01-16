@@ -5,7 +5,7 @@ export const staticRoutes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/HomeView.vue')
+    component: () => import('@/views/home/IndexView.vue')
   }
 ]
 
