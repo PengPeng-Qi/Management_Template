@@ -3,8 +3,8 @@
 <template>
   <div class="not-found">
     <h1>404</h1>
-    <p>Sorry, the page you are looking for does not exist.</p>
-    <router-link to="/">Return to homepage</router-link>
+    <p>{{ $t('notFound.message') }}</p>
+    <router-link to="/">{{ $t('notFound.backBtn') }}</router-link>
   </div>
 </template>
 
