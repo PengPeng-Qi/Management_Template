@@ -11,6 +11,8 @@ import '@/styles/common.scss'
 import '@/styles/element/index.scss'
 // element icon
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+// vue i18n
+import I18n from '@/languages/index'
 
 const app = createApp(App)
 // 全局注册 element icon
@@ -18,4 +20,4 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
 
-app.use(pinia).use(router).use(directivesPlugin).mount('#app')
+app.use(pinia).use(router).use(I18n).use(directivesPlugin).mount('#app')

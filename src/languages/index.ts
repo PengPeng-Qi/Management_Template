@@ -1,0 +1,16 @@
+import { createI18n } from 'vue-i18n'
+// import { getBrowserLang } from '@/utils'
+
+import zh from './modules/zh'
+import en from './modules/en'
+
+const i18n = createI18n({
+  // locale: getBrowserLang(),
+  locale: 'en',
+  messages: {
+    zh,
+    en
+  }
+})
+
+export default i18n

@@ -4,7 +4,7 @@ import { checkStatus } from './helper/checkStatus'
 
 const api = axios.create({
   // 默认地址请求地址，可在 .env.** 文件中进行修改
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_PUBLIC_URL,
   // 设置请求超时时间
   timeout: 2000,
   // 跨域时候允许携带凭证，浏览器会在跨域请求中包含 cookies
