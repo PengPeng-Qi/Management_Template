@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import NProgress from '@/config/nprogress'
-import { staticRoutes, errorRoutes } from './modules/staticRoutes'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { errorRoutes, staticRoutes } from './modules/staticRoutes'
 
 const mode = import.meta.env.VITE_ROUTER_MODE
 

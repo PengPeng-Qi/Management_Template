@@ -1,5 +1,5 @@
+import type { AxiosError, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
-import type { InternalAxiosRequestConfig, AxiosError, AxiosResponse } from 'axios'
 import { checkStatus } from './helper/checkStatus'
 
 const api = axios.create({
