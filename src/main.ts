@@ -1,6 +1,6 @@
+import pinia from '@/stores'
 import App from './App.vue'
 import router from './router'
-import pinia from '@/stores'
 // global directives
 import directivesPlugin from './directives'
 // reset css
