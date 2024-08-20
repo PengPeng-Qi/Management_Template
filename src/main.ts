@@ -5,10 +5,8 @@ import router from "./router";
 import directivesPlugin from "./directives";
 // reset css
 import "@/styles/reset.css";
-// common css
-import "@/styles/common.scss";
-// customized element style
-import "@/styles/element/index.scss";
+// custom css
+import "@/styles/custom.scss";
 // element icon
 import * as ElementPlusIconsVue from "@element-plus/icons-vue";
 // vue i18n

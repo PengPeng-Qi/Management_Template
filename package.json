@@ -20,7 +20,7 @@
     "@element-plus/icons-vue": "^2.1.0",
     "axios": "^1.5.1",
     "coder-prettier-config": "^1.0.1",
-    "element-plus": "^2.4.0",
+    "element-plus": "^2.8.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.6",
     "pinia-plugin-persistedstate": "^3.2.1",
