@@ -1,4 +1,5 @@
 import vue from "@vitejs/plugin-vue";
+import { codeInspectorPlugin } from "code-inspector-plugin";
 import { fileURLToPath, URL } from "node:url";
 import AutoImport from "unplugin-auto-import/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
@@ -38,6 +39,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
         resolvers: [ElementPlusResolver({ importStyle: "sass" })], // 自定义 ElementPlus 主题色
       }),
       vueSetupExtend() /* 提供修改单文件组件 name 能力 */,
+      codeInspectorPlugin({ bundler: "vite" }) /** 提供页面反映射到编辑器的能力 */,
     ],
     esbuild: {
       pure: ENV.VITE_DROP_CONSOLE ? ["console.log", "debugger"] : [] /* 移除项目中所有的 console.log，debugger 函数 */,
