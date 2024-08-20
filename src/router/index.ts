@@ -33,7 +33,7 @@ router.beforeEach(async (to, from, next) => {
   NProgress.start();
 
   // 2.动态设置标题
-  const title = import.meta.env.VITE_Global_APP_TITLE;
+  const title = import.meta.env.VITE_Global_TITLE;
   document.title = to.meta.title ? `${to.meta.title} - ${title}` : title;
 
   // 3.正常访问页面

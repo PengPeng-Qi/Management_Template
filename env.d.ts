@@ -6,7 +6,7 @@ interface ImportMetaEnv {
   readonly VITE_PORT: number;
   readonly VITE_OPEN: boolean;
   readonly VITE_PUBLIC_URL: string;
-  readonly VITE_Global_APP_TITLE: string;
+  readonly VITE_Global_TITLE: string;
   readonly VITE_DROP_CONSOLE: boolean;
 }
 

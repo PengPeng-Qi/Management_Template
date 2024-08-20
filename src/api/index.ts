@@ -8,7 +8,7 @@ const api = axios.create({
   // 设置请求超时时间
   timeout: 2000,
   // 跨域时候允许携带凭证，浏览器会在跨域请求中包含 cookies
-  withCredentials: true,
+  // withCredentials: true,
 });
 
 // 请求拦截器
