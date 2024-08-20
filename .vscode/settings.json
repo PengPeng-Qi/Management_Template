@@ -1,6 +1,10 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "vue.autoInsert.dotValue": true,
-  "cSpell.words": ["aeskey", "ciphertext", "nightwatch", "pubencrypt", "pubencrypted"]
+  "editor.formatOnSave": true, //  开启保存格式化
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit",
+    "source.sortImports": "explicit"
+  },
+  "stylelint.validate": ["css", "less", "scss", "vue"],
+  "vue.autoInsert.dotValue": true // 使用 vue ref 值自动加上 .value
 }
