@@ -1,12 +1,12 @@
 /** 声明文件 */
 declare global {
   interface Navigator {
-    browserLanguage: string
+    browserLanguage: string;
   }
 }
 
 // 确保该文件是一个模块，而不是一个脚本
-export {}
+export {};
 
 /**
  * 如果一个文件没有 import、export 语句，会被视为一个全局脚本，

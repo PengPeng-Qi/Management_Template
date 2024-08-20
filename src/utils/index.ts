@@ -6,12 +6,12 @@
  * @returns {String}
  */
 export function getBrowserLang() {
-  const browserLang = navigator.language ? navigator.language : navigator.browserLanguage
-  let defaultBrowserLang = ''
-  if (['cn', 'zh', 'zh-cn'].includes(browserLang.toLowerCase())) {
-    defaultBrowserLang = 'zh'
+  const browserLang = navigator.language ? navigator.language : navigator.browserLanguage;
+  let defaultBrowserLang = "";
+  if (["cn", "zh", "zh-cn"].includes(browserLang.toLowerCase())) {
+    defaultBrowserLang = "zh";
   } else {
-    defaultBrowserLang = 'en'
+    defaultBrowserLang = "en";
   }
-  return defaultBrowserLang
+  return defaultBrowserLang;
 }

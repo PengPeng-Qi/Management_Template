@@ -1,19 +1,19 @@
 export const useCounterStore = defineStore(
-  'counter',
+  "counter",
   () => {
-    const count = ref(0)
-    const doubleCount = computed(() => count.value * 2)
+    const count = ref(0);
+    const doubleCount = computed(() => count.value * 2);
     const increment = () => {
-      count.value++
-    }
+      count.value++;
+    };
 
     return {
       count,
       doubleCount,
-      increment
-    }
+      increment,
+    };
   },
   {
-    persist: true // 是否持久化
+    persist: true, // 是否持久化
   }
-)
+);

@@ -11,13 +11,14 @@
     "build-dev-only": "vite build --mode development",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "lint:prettier": "prettier --write src/",
+    "lint:prettier": "prettier . --write",
     "lint:lint-staged": "lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
     "axios": "^1.5.1",
+    "coder-prettier-config": "^1.0.1",
     "element-plus": "^2.4.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.6",
